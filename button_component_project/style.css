@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 90%);
+    border: 1px solid hsl(0, 0%, 70%);
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+}
+
+.btn:hover, .btn:focus{
+    background-color: hsl(0, 0%, 80%);
+    box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
+}
+
+/* Primary */
+
+.btn.btn-primary {
+    background-color: hsl(271, 70%, 50%);
+    color: rgb(255, 255, 255);
+    border-color: hsl(271, 70%, 30%);   
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus{
+    background-color: hsl(271, 70%, 40%);
+    box-shadow: 0 0 5px 0 hsl(271, 70%, 30%);
+}
+
+/* Accent */
+.btn.btn-accent {
+    background-color: hsl(200, 100%, 40%);
+    color: rgb(255, 255, 255);
+    border-color: hsl(200, 100%, 20%);   
+}
+
+.btn.btn-accent:hover, .btn.btn-accent:focus{
+    background-color: hsl(200, 100%, 30%);
+    box-shadow: 0 0 5px 0 hsl(200, 100%, 20%);
+}
+
+/* Danger */
+
+.btn.btn-danger{
+    background-color: hsl(0, 60%, 50%);
+    color: rgb(255, 255, 255);
+    border-color: hsl(0, 60%, 30%);   
+}
+
+.btn.btn-danger:hover, .btn.btn-danger:focus{
+    background-color: hsl(0, 60%, 40%);
+    box-shadow: 0 0 5px 0 hsl(0, 60%, 30%);
+}
+
+/* Large */
+
+.btn.btn-large {
+    font-size: 1.25rem;
+}
+
+/* Small */
+
+.btn.btn-small {
+    font-size: 0.75rem;
+}
+
+/* Pill */
+
+.btn.btn-pill {
+    border-radius: 1000000px;
+}
+
+/* Custom botton */
+
+.btn.btn-custom {
+    background: linear-gradient(to right, hsl(271, 70%, 50%), hsl(200, 100%, 40%));
+    color: white;
+    border-color: #222;
+}
+
+.btn.btn-custom:hover, .btn.btn-custom:focus{
+    background: linear-gradient(to right, hsl(271, 70%, 40%, hsl(200,100%,30%)));
+    border-color:black;
+    box-shadow: 0 0 5px 0 black;
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --primary-color: green;
+            --margin: 1rem;
+        }
+
+        h2{
+            margin: var(--margin, 10px);
+            background-color: var(--primary-color);
+            color: white;
+            padding: .5rem;
+        }
+
+        p {
+            margin: var(--margin);
+            color: var(--primary-color);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Heading</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <button>Click Me</button>
+    <script>
+        const button = document.querySelector('button').addEventListener('click', (event) => {
+            document.documentElement.style.setProperty('--primary-color', 'red')
+        })
+    </script>
+</body>
+</html>

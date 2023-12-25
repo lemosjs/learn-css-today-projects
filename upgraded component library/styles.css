@@ -1,0 +1,42 @@
+input {
+  margin: .25rem;
+}
+
+.input {
+
+  --border-color: #AAA;
+  --box-shadow-default: 0 0 5px 0 var(--border-color);
+
+  border: 1px solid var(--border-color);
+  outline: none;
+  font-size: inherit;
+  padding: .5em;
+  border-radius: .2em;
+}
+
+.input:focus {
+  --border-color: #0AF;
+  border-color: var(--border-color);
+  box-shadow: var(--box-shadow-default);
+}
+
+.input.input-success {
+  --border-color: #27AE60;
+}
+
+.input.input-error {
+  --border-color: #EB5757;
+}
+
+
+.input.input-large {
+  font-size: 1.25rem;
+}
+
+.input.input-small {
+  font-size: .75rem;
+}
+
+.input:disabled {
+  background-color: #EAEAEA;
+}

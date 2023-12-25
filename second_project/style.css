@@ -1,0 +1,21 @@
+* {
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+.green-divs {
+    background-color: green;
+    color: white;
+}
+
+.cyan-color {
+    color: cyan;
+}
+
+/* LI element  */
+.striked {
+    text-decoration-line: line-through;
+}

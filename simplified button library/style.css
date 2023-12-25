@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+
+    --background-hue: 0;
+    --background-saturation: 0%;
+    --initial-background-lightness: 90%;
+    --background-lightness: var(--initial-background-lightness);
+    --border-lightness: calc(var(--initial-background-lightness) - 20%);
+
+    background-color: hsl(
+        var(--background-hue),
+        var(--background-saturation),
+        var(--background-lightness)
+    );
+    border: 1px solid hsl(
+        var(--background-hue),
+        var(--background-saturation),
+        var(--border-lightness)
+    );
+    outline: none;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+}
+
+.btn:hover, .btn:focus{
+
+    --background-lightness: calc(var(--initial-background-lightness) - 10%);
+    box-shadow: 0 0 5px 0 hsl(
+        var(--background-hue),
+        var(--background-saturation),
+        var(--border-lightness)
+    );
+}
+
+/* Primary */
+
+.btn.btn-primary {
+
+    --background-hue: 271;
+    --background-saturation: 70%;
+    --initial-background-lightness: 50%;
+    color: rgb(255, 255, 255);
+   
+}
+
+
+/* Accent */
+.btn.btn-accent {
+    --background-hue: 200;
+    --background-saturation: 100%;
+    --initial-background-lightness: 40%;
+    color: rgb(255, 255, 255); 
+}
+
+/* Danger */
+
+.btn.btn-danger{
+    --background-hue: 0;
+    --background-saturation: 60%;
+    --initial-background-lightness: 50%;
+    color: rgb(255, 255, 255);
+
+}
+
+.btn.btn-danger:hover, .btn.btn-danger:focus{
+    background-color: hsl(0, 60%, 40%);
+    box-shadow: 0 0 5px 0 hsl(0, 60%, 30%);
+}
+
+/* Large */
+
+.btn.btn-large {
+    font-size: 1.25rem;
+}
+
+/* Small */
+
+.btn.btn-small {
+    font-size: 0.75rem;
+}
+
+/* Pill */
+
+.btn.btn-pill {
+    border-radius: 1000000px;
+}
+
+/* Custom botton */
+
+.btn.btn-custom {
+    background: linear-gradient(to right, hsl(271, 70%, 50%), hsl(200, 100%, 40%));
+    color: white;
+    border-color: #222;
+}
+
+.btn.btn-custom:hover, .btn.btn-custom:focus{
+    background: linear-gradient(to right, hsl(271, 70%, 40%, hsl(200,100%,30%)));
+    border-color:black;
+    box-shadow: 0 0 5px 0 black;
+
+}

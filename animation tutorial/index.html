@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+
+
+        .main-div {
+            --scale: 1.5;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            color: white;
+            animation: custom 1s linear .5s forwards infinite alternate;
+
+        }
+
+
+        .main-div:hover {
+            animation-play-state: paused;
+            
+            
+        }
+
+        @keyframes custom {
+            from{
+                transform: translate(0) scale(var(--scale));
+            }
+
+            to{
+                transform: translateX(100%) scale(var(--scale));
+            }
+        }
+
+    
+       
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        Div
+    </div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+    <div>Div</div>
+</body>
+</html>

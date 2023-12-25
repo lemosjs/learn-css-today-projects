@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .item{
+            border: 1px solid #333;
+            background-color: #777;
+            width: 75px;
+            color: yellow;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            background-color: #CCC;
+            border: 1px solid black;
+        }
+
+        .item1{
+            min-height: 50px;
+            align-self: flex-start;
+            flex-grow: 1;
+        }
+
+        .item2{
+            min-height:100px;
+            align-self: center;
+        }
+
+        .item3{
+            min-height:150px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    <span>This is a span</span>
+</body>
+</html>
